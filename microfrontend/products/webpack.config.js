@@ -12,7 +12,8 @@ module.exports = {
             filename: "remoteEntry.js",
             exposes: {
                 './ProductsIndex': './src/bootstrap'
-            }
+            },
+            shared: ['faker']
         }),
         new HtmlWebpackPlugin({
             template: './public/index.html'
